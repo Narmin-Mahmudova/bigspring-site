@@ -1,6 +1,6 @@
 import React from 'react';
 import heroImg from '../../assets/banner-art.svg'; 
-import Card from './Card';
+import Card from './card';
 
 function Index() {
   return (
