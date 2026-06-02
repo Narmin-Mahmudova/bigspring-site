@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImg from '../../assets/banner-art.svg'; 
+import Card from './Card';
 
 function Index() {
   return (
@@ -16,6 +17,7 @@ function Index() {
           <img src={heroImg} alt="Website development challenges illustration" className="w-full h-auto object-contain"/>
         </div>
       </div>
+<Card/>
     </>
   );
 }
