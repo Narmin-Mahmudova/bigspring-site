@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Routes } from 'react-router'
-import { Route } from 'react-router'
+import { Routes, Route } from 'react-router'
 import Layout from '../../layout/Layout'
 import Index from '../pages/Index'
+import Mehsullar from '../../Mehsullar'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Pricing from '../pages/Pricing' 
@@ -15,7 +15,8 @@ function Router() {
       <>
           <Routes>
               <Route path='/' element={<Layout/>}>
-                  <Route index element={<Index />} />
+              <Route index element={<Mehsullar />} />
+                  {/* <Route index element={<Index />} /> */}
                   <Route path='/haqqimizda' element={<About />} />
                   <Route path='/pricing' element={<Pricing />} />
                   <Route path='/elaqe' element={<Contact />} />
