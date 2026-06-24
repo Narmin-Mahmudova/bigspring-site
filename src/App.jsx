@@ -1,17 +1,13 @@
 import React from 'react'
 import Router from './components/Router/Router'
-
-
+import { BasketProvider } from './components/context/BasketContext'
 
 function App() {
-  return (
-    <>
-      {/* Bu bizim butun routlarimdiz yeni sehifler arasi kecit */}
-     <Router/>
-
-
-    </>
-  )
+    return (
+        <BasketProvider>
+            <Router />
+        </BasketProvider>
+    )
 }
 
 export default App
